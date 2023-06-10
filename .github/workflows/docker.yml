@@ -59,4 +59,4 @@ jobs:
           context: ${{ github.event.inputs.folderPath }}
           file: '${{ github.event.inputs.folderPath }}/${{ github.event.inputs.dockerFile }}'
           tags: |
-            ghcr.io/nextcloud/continuous-integration-${{ github.event.inputs.folderPath }}${{ github.event.inputs.suffix }}:${{ github.event.inputs.tagName }}
+            ghcr.io/${{ github.repository }}/continuous-integration-${{ github.event.inputs.folderPath }}${{ github.event.inputs.suffix }}:${{ github.event.inputs.tagName }}
